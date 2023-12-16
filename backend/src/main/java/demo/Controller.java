@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
     @GetMapping("/ping")
-    public ResponseEntity<Boolean> index() {
-        return ResponseEntity.ok(true);
+    public ResponseEntity<String> index() {
+        return ResponseEntity.ok("서버에 정상적으로 연결되었습니다.");
     }
 }
